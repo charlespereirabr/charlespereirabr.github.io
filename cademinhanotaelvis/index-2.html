@@ -271,7 +271,8 @@ nav li {
         "<li>Apresenta uma estrutura aberta (também chamada de acíclica ou alifática)</li>" + 
         "<li>Possuí uma ligação dupla entre os carbonos e, por isso, é insaturada</li>" +
         "<li>Apresenta uma ramificação no carbono 5 da cadeia e, por isso, é ramificada</li>",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        image: "5-metil-hex-2-en-4-ol.png"
     },
 
     {
@@ -305,7 +306,8 @@ nav li {
         optionD: "D - Fenol e éster",
         optionE: "E - Álcool e hidrocarboneto",
         detail: "B - Fenol e éter. O eugenol apresenta em sua cadeia funções orgânicas oxigenadas, ou seja, além dos átomos de carbono e hidrogênio, o oxigênio é um héteroatomo presente. A função orgânica fenol é caracterizada pela hidroxila (-OH) ligada a um anel aromático. Já na função éter, o oxigênio está localizado entre duas cadeias carbônicas.",
-        correctOption: "optionB"
+        correctOption: "optionB",
+        image: "eugenol.jpeg"
     },
 
     {
@@ -419,6 +421,14 @@ function NextQuestion(index) {
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
     document.getElementById("option-five-label").innerHTML = currentQuestion.optionE;
+
+    if (currentQuestion.image != null){
+        document.getElementById("div-image").style.display = "flex";
+        document.getElementById("image-q").src = currentQuestion.image;
+    } else {
+        document.getElementById("div-image").style.display = "none";
+        document.getElementById("image-q").src = "";
+    }
 }
 
 function checkForAnswer() {
@@ -612,7 +622,9 @@ function closeDetailModal() {
             <div class="game-question-container">
                 <h1 id="display-question"></h1>
             </div>
-
+            <div id="div-image" style="display: none;">
+                <img style="width: 80%; height: 80%;" id="image-q" src="">
+            </div>
             <div class="game-options-container">
 
                 <span>
