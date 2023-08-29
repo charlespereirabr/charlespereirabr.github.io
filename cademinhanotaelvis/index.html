@@ -1,22 +1,70 @@
-<html title="Química Orgânica">
+<meta charset="UTF-8">
+<html lang="br">
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+  }
+  
+  html, body{
+    height: 100%;
+  }
+  
+  
+  body{
+    font-family: 'Montserrat', serif;
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+  }
+  
+  div{
+    opacity: 75%;
+    border-radius: 30px;
+    background-color: lightgray;
+  }
+</style>
   <body>
-    <h1>
+    <div>
+      <br/>
+      <br/>
+      <br/>
+    <h2>
+      <center>
+        Química Orgânica
+      </center>
+    </h2>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2>
       <center>
       A química orgânica é o ramo da química que estuda os compostos carbônicos ou os compostos orgânicos, que são aqueles formados por átomos de carbono.
-
-Em geral, a química orgânica consiste no estudo dos compostos de carbono.
-
-Os compostos orgânicos são os que apresentam carbono, hidrogênio, oxigênio, nitrogênio, fósforo e enxofre. São exemplos: as proteínas, os glicídios, lipídios, vitaminas e enzimas.
+<br/>Em geral, a química orgânica consiste no estudo dos compostos de carbono.
+<br/>Os compostos orgânicos são os que apresentam carbono, hidrogênio, oxigênio, nitrogênio, fósforo e enxofre. São exemplos: as proteínas, os glicídios, lipídios, vitaminas e enzimas.
       </center>
-    </h1>
+    </h2>
+    <br/>
+    <br/>
     <center>
-      <button onclick='navegar();'>Vamos ao Quiz</button>
+      <div>
+        <a href="#" style="font-size: 28px; color: black;" onclick='navegar();'>Vamos ao Quiz</a>
+      </div>
     </center>
+  </div>
   </body>
 
   <script>
     function navegar(){
-      window.location.href = 'index-2.html';
+      window.location.assign('index-2.html');
     }
   </script>
 </html>
