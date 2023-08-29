@@ -34,7 +34,7 @@ main{
 }
 
 .game-quiz-container{
-  width: 100%;
+  width: 98%;
   height: 100%;
   background-color: lightgray;
   opacity: 75%;
@@ -435,7 +435,7 @@ function checkForAnswer() {
     })
 
     //checking to make sure a radio input has been checked or an option being chosen
-    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
+    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false && options[4].checked == false) {
         document.getElementById('option-modal').style.display = "flex"
     } else {
       document.getElementById('detail-text').innerHTML = currentQuestion.detail
@@ -519,7 +519,7 @@ function handleEndGame() {
         remark = "Excelente trabalho, parabéns."
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 10) * 100
+    const playerGrade = (playerScore / 11) * 100
 
     //data to display to score board
     document.getElementById('remarks').innerHTML = remark
