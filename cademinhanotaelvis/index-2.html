@@ -529,8 +529,8 @@ function handleEndGame() {
         remark = "Excelente trabalho, parabéns."
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 11) * 100
-
+    const playerGrade = Math.round((playerScore / 11) * 100, -1)
+    
     //data to display to score board
     document.getElementById('remarks').innerHTML = remark
     document.getElementById('remarks').style.color = remarkColor
